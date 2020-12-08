@@ -40,7 +40,7 @@
 
 .header {
   background-color: #61dafb;
-  padding: 20px;
+  padding: 14px;
   text-align: center;
 }
 
@@ -49,5 +49,24 @@ h1 {
   color: rgba(63, 62, 62, 0.658);
   text-shadow: 2px 2px 7px ;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.navbar {
+  overflow: hidden;
+  background-color: #4d565815;
+}
+
+.navBarLinks {
+  float: left;
+  display: block;
+  color: #b4b0b0;
+  text-align: center;
+  padding: 10px;
+  text-decoration: #4d5658;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navBarLinks hover {
+  background-color: #61dafb;
+  
 }
