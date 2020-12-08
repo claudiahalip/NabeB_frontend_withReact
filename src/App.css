@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+.header {
+  background-color: #61dafb;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  color: rgba(63, 62, 62, 0.658);
+  text-shadow: 2px 2px 7px ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
