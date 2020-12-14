@@ -8,24 +8,31 @@ class NavBar extends Component {
         return(
             <div>
                 <div className="navbar">
-                <Link to='/'>
-                    <h3 className="navBarLinks">Home</h3>
+                <Link to='/login'>
+                    <h3 className="navBarLinks">Log in</h3>
                 </Link>
 
                 <Link to='/bussiness'>
-                    <h3 className="navBarLinks">Bussines</h3>
+                    <h3 className="navBarLinks">Business</h3>
                 </Link>
 
                 <Link to='/beighborhoods'>
                     <h3 className="navBarLinks">Neighbors</h3>
                 </Link>
 
-                <Link to='/login'>
-                    <h3 className="navBarLinks">Log in</h3>
+                
+                <Link to='/'>
+                    <h3 className="navBarLinks">Home</h3>
                 </Link>
 
-
                 </div>
+
+                <form>
+                    <input
+                    placeholder="search for a business..."
+                    name="search"></input>
+                    <button  className="search"  placeholder="Search" ></button>
+                </form>
 
             </div>
         )
