@@ -9,9 +9,9 @@ import Login from './components/Login'
 import Signup from  './components/Signup'
 
 class  App extends Component {
-  constructor (props) {
+  constructor(props) {
       super(props);
-      this.stare = {
+      this.state = {
         isLoggedIn: false,
         user: {}
       }

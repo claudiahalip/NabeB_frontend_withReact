@@ -9,7 +9,7 @@ class Home extends Component{
         return(
             <div>
                  <Route exact  path = '/'>
-                <div class='header'>
+                <div className ='header'>
                 <h1>NABE B</h1>
                 </div>
                 </Route>

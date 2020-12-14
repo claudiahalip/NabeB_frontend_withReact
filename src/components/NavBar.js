@@ -31,7 +31,7 @@ class NavBar extends Component {
                     <input
                     placeholder="search for a business..."
                     name="search"></input>
-                    <button  className="search"  placeholder="Search" ></button>
+                    
                 </form>
 
             </div>
