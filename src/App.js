@@ -1,15 +1,18 @@
+import React from 'react'
 import './App.css';
 import Home from './components/Home'
 import NavBar from './components/NavBar';
 import axios from 'axios';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { Component } from 'react';
+import Login from './components/Login'
+import Signup from  './components/Signup'
 
 class  App extends Component {
   constructor (props) {
       super(props);
       this.stare = {
-        isLoggedIn= false,
+        isLoggedIn: false,
         user: {}
       }
   }
@@ -52,9 +55,20 @@ class  App extends Component {
        <Router>
         <Switch>
 
-          <Route exact path='/' component={}/>
-          <Route exact path='/login' component={}/>
-          <Route exact path='/signup' component={}/>
+          <Route exact path='/' render={props => (
+              <Home {...props} loggedInStatus={this.state.isLoggedIn}/>
+              )}
+            />
+          <Route exact path='/login' render={props => (
+            <Login {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn}/>
+            )}
+          />
+
+          <Route exact path='/signup' render={props => (
+              <Signup {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn}/>
+              )}
+            />
+
 
         </Switch>
         <Home/>
