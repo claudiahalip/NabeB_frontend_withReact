@@ -9,6 +9,10 @@ class NavBar extends Component {
             <div>
                 <div className="navbar">
                 <Link to='/login'>
+                    <h3 className="navBarLinks">Sign up</h3>
+                </Link>
+
+                <Link to='/login'>
                     <h3 className="navBarLinks">Log in</h3>
                 </Link>
 

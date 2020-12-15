@@ -71,7 +71,7 @@ class  App extends Component {
 
 
         </Switch>
-        <Home/>
+        
         <NavBar/>
       </Router>
       </React.StrictMode>
