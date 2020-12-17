@@ -8,7 +8,7 @@ class NavBar extends Component {
         return(
             <div>
                 <div className="navbar">
-                <Link to='/login'>
+                <Link to='/signup'>
                     <h3 className="navBarLinks">Sign up</h3>
                 </Link>
 
@@ -31,12 +31,12 @@ class NavBar extends Component {
 
                 </div>
 
-                <form>
+                {/* <form>
                     <input
                     placeholder="search for a business..."
                     name="search"></input>
                     
-                </form>
+                </form> */}
 
             </div>
         )

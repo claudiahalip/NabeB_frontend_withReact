@@ -40,7 +40,7 @@ class Login extends Component {
                 })
             }
         })
-        .catch(console.log('api errors:', error))
+        .catch(console.log('api errors:', this.errors))
     }
 
     redirect = ()=>{
@@ -68,7 +68,7 @@ class Login extends Component {
                     placeholder="username"
                     type = "text"
                     name="username"
-                    value = {username}
+                    value = {this.username}
                     onChange = {this.handleChange}
                     ></input>
                     <br></br>
@@ -76,7 +76,7 @@ class Login extends Component {
                     placeholder = 'mail'
                     type="text"
                     name = 'email'
-                    value = {email}
+                    value = {this.email}
                     onChange = {this.handleChange}
                     ></input>
                     <br></br>
@@ -84,13 +84,17 @@ class Login extends Component {
                     placeholder="password"
                     type = 'password'
                     name="password"
-                    value = {password}
+                    value = {this.password}
                     onChange = {this.handleChange}
                     ></input>
                     <br></br>
-                    
+                    <button placeholder="submit" type="submit">
+                        Log in
+                    </button>
                 </form>
-
+                <div>
+                {this.state.errors ? this.handleErrors() : null }
+                </div>
             </div>
         )
     }

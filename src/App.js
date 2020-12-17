@@ -53,6 +53,7 @@ class  App extends Component {
       <div>
         <React.StrictMode>
        <Router>
+       <NavBar/>
         <Switch>
 
           <Route exact path='/' render={props => (
@@ -72,7 +73,7 @@ class  App extends Component {
 
         </Switch>
         
-        <NavBar/>
+       
       </Router>
       </React.StrictMode>
       </div>

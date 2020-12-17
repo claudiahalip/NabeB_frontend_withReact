@@ -72,16 +72,3 @@ h1 {
   
 }
 
-.search {
-  position: relative;
-  background-color:#61dafb;
-  border: none;
-  border-radius: 10
-  px;
-
-  width: max-content;
-  color: whitesmoke;
-  font-size: 14px;
-  justify-self: center;
-
-}
