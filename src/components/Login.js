@@ -100,7 +100,9 @@ class Login extends Component {
                     </button>
                 </form>
                 <div>
-                    or <Link to ='/signup'>Sign up</Link>
+                    or <Link to ='/signup'>
+                        Sign up
+                     </Link>
                 </div>
                 <div>
                 {this.state.errors ? this.handleErrors() : null }

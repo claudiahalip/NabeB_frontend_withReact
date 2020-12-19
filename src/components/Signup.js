@@ -70,6 +70,7 @@ class Signup extends Component {
     render(){
         return(
             <div>
+                <h2>Sign up</h2>
                 <form onSubmit={this.handleSubmit}>
                 <input
                     placeholder="username"

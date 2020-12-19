@@ -8,23 +8,25 @@ class NavBar extends Component {
         return(
             <div>
                 <div className="navbar">
+
+                <Link to ='/login'>
+                    <h3 className = 'navBarLinks'>Log in</h3>
+                </Link>
+
                 <Link to='/signup'>
                     <h3 className="navBarLinks">Sign up</h3>
                 </Link>
 
-                <Link to='/login'>
-                    <h3 className="navBarLinks">Log in</h3>
-                </Link>
+                
 
-                <Link to='/bussinesses'>
-                    <h3 className="navBarLinks">Business</h3>
+                <Link to='/businesses'>
+                    <h3 className="navBarLinks">Businesses</h3>
                 </Link>
 
                 <Link to='/neighborhoods'>
                     <h3 className="navBarLinks">Neighbors</h3>
                 </Link>
 
-                
                 <Link to='/'>
                     <h3 className="navBarLinks">Home</h3>
                 </Link>

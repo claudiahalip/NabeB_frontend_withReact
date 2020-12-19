@@ -7,7 +7,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { Component } from 'react';
 import Login from './components/Login'
 import Signup from  './components/Signup'
-
+import Businesses from './components/Businesses'
 class  App extends Component {
   constructor(props) {
       super(props);
@@ -54,7 +54,14 @@ class  App extends Component {
         <React.StrictMode>
        <Router>
        <NavBar/>
-        <Switch>
+
+       <Switch>
+         <Route exact path = '/businesses' render = {props => (
+           <Businesses {...props} loggedInStatus= {this.state.isLoggedIn}/>
+         )}
+         />
+
+         
 
           <Route exact path='/' render={props => (
               <Home {...props} handleLogout={this.handleLogout} loggedInStatus={this.state.isLoggedIn}/>
@@ -69,9 +76,8 @@ class  App extends Component {
               <Signup {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn}/>
               )}
             />
-
-
         </Switch>
+        
         
        
       </Router>
