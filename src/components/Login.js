@@ -1,5 +1,6 @@
 import React from 'react' 
 import{Component} from 'react'
+import {Link} from 'react-router-dom'
 import axios from 'axios'
 
 class Login extends Component {
@@ -12,6 +13,10 @@ class Login extends Component {
             password: "",
             errors: ""
         }
+    }
+
+    componentWillMount(){
+        return this.props.loggedInStatus ? this.redirect() : null
     }
 
     handleChange = (event)=>{
@@ -44,10 +49,10 @@ class Login extends Component {
     }
 
     redirect = ()=>{
-       this.props.history.push('/') 
+       this.props.history.push('/businesses') 
     }
 
-    handaleErrors = ()=>{
+    handleErrors = ()=>{
         return (
             <div>
               <ul>
@@ -61,14 +66,16 @@ class Login extends Component {
 
 
     render(){
+        const {username, email, password} = this.state
         return(
             <div>
+                <h2>Log in</h2>
                 <form onSubmit= {this.handleSubmit}>
                     <input
                     placeholder="username"
                     type = "text"
                     name="username"
-                    value = {this.username}
+                    value = {username}
                     onChange = {this.handleChange}
                     ></input>
                     <br></br>
@@ -76,7 +83,7 @@ class Login extends Component {
                     placeholder = 'mail'
                     type="text"
                     name = 'email'
-                    value = {this.email}
+                    value = {email}
                     onChange = {this.handleChange}
                     ></input>
                     <br></br>
@@ -84,7 +91,7 @@ class Login extends Component {
                     placeholder="password"
                     type = 'password'
                     name="password"
-                    value = {this.password}
+                    value = {password}
                     onChange = {this.handleChange}
                     ></input>
                     <br></br>
@@ -92,6 +99,9 @@ class Login extends Component {
                         Log in
                     </button>
                 </form>
+                <div>
+                    or <Link to ='/signup'>Sign up</Link>
+                </div>
                 <div>
                 {this.state.errors ? this.handleErrors() : null }
                 </div>

@@ -16,11 +16,11 @@ class NavBar extends Component {
                     <h3 className="navBarLinks">Log in</h3>
                 </Link>
 
-                <Link to='/bussiness'>
+                <Link to='/bussinesses'>
                     <h3 className="navBarLinks">Business</h3>
                 </Link>
 
-                <Link to='/beighborhoods'>
+                <Link to='/neighborhoods'>
                     <h3 className="navBarLinks">Neighbors</h3>
                 </Link>
 
