@@ -8,6 +8,8 @@ import { Component } from 'react';
 import Login from './components/Login'
 import Signup from  './components/Signup'
 import Businesses from './components/Businesses'
+import Neighbors from './components/Neighbors'
+
 class  App extends Component {
   constructor(props) {
       super(props);
@@ -56,10 +58,14 @@ class  App extends Component {
        <NavBar/>
 
        <Switch>
-         <Route exact path = '/businesses' render = {props => (
-           <Businesses {...props} loggedInStatus= {this.state.isLoggedIn}/>
-         )}
-         />
+          <Route exact path = '/businesses' render = {props => (
+            <Businesses {...props} loggedInStatus= {this.state.isLoggedIn}/>
+          )}
+          />
+          <Route exact path = '/neighborhoods' render = {props => (
+            <Neighbors { ...props} loggedInStatus = {this.state.isLoggedIn}/>
+          )}
+          />
 
          
 
