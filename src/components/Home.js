@@ -9,7 +9,7 @@ class Home extends Component{
 
     handleLogoutClick = () => {
         axios.delete('http://localhost:3001/logout', {withCredentials: true})
-        .then(response =>{
+        .then(response => {
             this.props.handleLogout()
         })
         .catch(error => {
@@ -24,7 +24,7 @@ class Home extends Component{
                  <Route exact  path = '/'>
                 <div className ='header'>
                 <h1>NABE B</h1>
-                <button onClick = {this.handleLogoutClick}>Logout</button>
+                {this.props.loggedInStatus && <button onClick = {this.handleLogoutClick}>Logout</button>}
                 </div>
                 </Route>
                 

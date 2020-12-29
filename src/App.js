@@ -55,7 +55,7 @@ class  App extends Component {
       <div>
         <React.StrictMode>
        <Router>
-       <NavBar/>
+       <NavBar loggedInStatus={this.state.isLoggedIn}/>
 
        <Switch>
           <Route exact path = '/businesses' render = {props => (

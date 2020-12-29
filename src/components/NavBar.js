@@ -10,11 +10,11 @@ class NavBar extends Component {
                 <div className="navbar">
 
                 <Link to ='/login'>
-                    <h3 className = 'navBarLinks'>Log in</h3>
+                    {!this.props.loggedInStatus && <h3 className = 'navBarLinks'>Log in</h3>}
                 </Link>
 
                 <Link to='/signup'>
-                    <h3 className="navBarLinks">Sign up</h3>
+                    {!this.props.loggedInStatus && <h3 className="navBarLinks">Sign up</h3>}
                 </Link>
 
                 
