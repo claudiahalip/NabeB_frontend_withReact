@@ -30,6 +30,9 @@ class NavBar extends Component {
                 <Link to='/'>
                     <h3 className="navBarLinks">Home</h3>
                 </Link>
+                <Link to = '/userprofile'>
+                    {this.props.loggedInStatus && <h3 className="navBarLinks">Your profile</h3>}
+                </Link>
 
                 </div>
 

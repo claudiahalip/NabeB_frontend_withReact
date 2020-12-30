@@ -9,6 +9,7 @@ import Login from './components/Login'
 import Signup from  './components/Signup'
 import Businesses from './components/Businesses'
 import Neighbors from './components/Neighbors'
+import UserProfile from './components/UserProfile';
 
 class  App extends Component {
   constructor(props) {
@@ -82,6 +83,10 @@ class  App extends Component {
               <Signup {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn}/>
               )}
             />
+            <Route exact path='/userprofile' render = {props=> (
+              <UserProfile {...props} loggedInStatus = {this.state.isLoggedIn}/>
+            )}
+              />
         </Switch>
         
         
