@@ -20,9 +20,11 @@ class  App extends Component {
       }
   }
 
+  
+
   componentDidMount() {
     this.loginStatus()
-  }
+    }
 
   loginStatus = () => {
     axios.get('http://localhost:3001/logged_in', 
@@ -39,11 +41,13 @@ class  App extends Component {
 
 
   handleLogin = (data) => {
+    console.log(data)
     this.setState({
       isLoggedIn: true,
       user: data.user
     })
   }
+
   handleLogout = () => {
     this.setState({
     isLoggedIn: false,
@@ -84,7 +88,7 @@ class  App extends Component {
               )}
             />
             <Route exact path='/userprofile' render = {props=> (
-              <UserProfile {...props} loggedInStatus = {this.state.isLoggedIn}/>
+              <UserProfile {...props} loggedInStatus = {this.state.isLoggedIn} user = {this.state.user}/>
             )}
               />
         </Switch>
