@@ -81,7 +81,7 @@ class Signup extends Component {
                 ></input>
                 <br></br>
                 <input
-                    placeholder = 'mail'
+                    placeholder = 'email'
                     type="text"
                     name = 'email'
                     value = {this.email}

@@ -26,6 +26,16 @@ class  App extends Component {
     this.loginStatus()
     }
 
+
+    handleLogin = (data) => {
+      console.log(data)
+      this.setState({
+        isLoggedIn: true,
+        user: data.user
+      })
+    }
+    
+
   loginStatus = () => {
     axios.get('http://localhost:3001/logged_in', 
    {withCredentials: true})
@@ -40,13 +50,7 @@ class  App extends Component {
   }
 
 
-  handleLogin = (data) => {
-    console.log(data)
-    this.setState({
-      isLoggedIn: true,
-      user: data.user
-    })
-  }
+  
 
   handleLogout = () => {
     this.setState({
