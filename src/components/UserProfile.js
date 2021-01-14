@@ -6,13 +6,6 @@ class UserProfile extends Component {
         image: {}
     }
     
-    componentDidMount(){
-        return console.log(this.props.user, this.props.user.username, this.props.user.id)
-        
-    }
-
-   
-
     handleOnChange = (event) => {
         this.setState({
             [event.target.name]: event.target.value
@@ -37,6 +30,7 @@ class UserProfile extends Component {
         return(
             <div>
                 <h1>TEST</h1>
+                <div>{`Welcome,  ${this.props.username}!`}</div>
                 <form onSubmit= {this.handleSubmit} >
                     <input
                     onChange = {this.handleOnChange}
