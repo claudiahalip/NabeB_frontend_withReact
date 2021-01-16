@@ -37,11 +37,11 @@ class  App extends Component {
     }
     
 
-  loginStatus = (e) => {
+  loginStatus = () => {
     axios.get('http://localhost:3001/logged_in', 
    {withCredentials: true})
     .then(response => {
-      //console.log(response.data.user)
+      console.log(response.data.user)
       if (response.data.logged_in) {
         this.handleLogin(response.data)
       } else {
@@ -64,7 +64,7 @@ class  App extends Component {
   render(){
     return (
       <div>
-        <React.StrictMode>
+       <React.StrictMode>
        <Router>
        <NavBar loggedInStatus={this.state.isLoggedIn}/>
 
