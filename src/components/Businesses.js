@@ -1,16 +1,24 @@
-import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import { fetchBusinesses } from '../actions/businessesActions'
+import React, {Component} from 'react';
+import Business from './Business'
 
 
 class Businesses extends Component {
 
-    componentDidMount(){
-        this.props.fetchBusinesses();
-    }
+
+   renderBusinesses = () => {
+    console.log(this.props.businesses);
+    let businesses = this.props.businesses
+      return businesses.map( business =>{
+       return <Business business = {business} key={business.id} />
+     })
+   }
+    
+
      render(){
          return(
              <div>
+                 <h1>Businesses</h1>
+                 {this.renderBusinesses()}
              </div>
          )
      }
@@ -18,10 +26,5 @@ class Businesses extends Component {
     
 
 
-const mapStateToProps = (state)=>{
-    console.log(state)
-    return state
-    
-}
 
- export default connect(mapStateToProps,{fetchBusinesses} )(Businesses)
+ export default Businesses

@@ -6,10 +6,10 @@ import axios from 'axios';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { Component } from 'react';
 import Login from './components/Login'
-import Signup from  './components/Signup'
-import Businesses from './components/Businesses'
+import Signup from  './components/Signup';
 import Neighbors from './components/Neighbors'
 import UserProfile from './components/UserProfile';
+import BusinessesContainer from './containers/BusinessesContainer';
 
 class  App extends Component {
   constructor(props) {
@@ -70,7 +70,7 @@ class  App extends Component {
 
        <Switch>
           <Route exact path = '/businesses' render = {props => (
-            <Businesses {...props} loggedInStatus= {this.state.isLoggedIn}/>
+            <BusinessesContainer {...props} loggedInStatus= {this.state.isLoggedIn}/>
           )}
           />
           <Route exact path = '/neighborhoods' render = {props => (

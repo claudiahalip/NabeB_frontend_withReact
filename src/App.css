@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: grid;
 }
 
 .App-logo {
@@ -51,6 +52,20 @@ h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #4d5658;
+}
+
+.description{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #3b8494;
+ 
+  word-wrap: break-word;
+  
+
+}
+
 .navbar {
   overflow: hidden;
   background-color: #4d565815;
@@ -76,5 +91,24 @@ h1 {
   width: 300px;
   padding: 64px 15px 24px;
   margin: 0 auto;
+}
+
+.scrolling-wrapper{
+ display: inline-block;
+ overflow: auto;
+ white-space: nowrap;
+}
+
+
+
+.businessCard{
+  background-color: transparent;
+  width: 18rem;
+  height: 18rem;
+  border: grey solid 1px;
+  padding: 1rem;
+  margin: 1rem 1rem;
+  text-align: center;
+  
 }
 
