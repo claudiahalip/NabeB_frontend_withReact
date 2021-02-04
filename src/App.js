@@ -11,6 +11,7 @@ import Neighbors from './components/Neighbors'
 import UserProfile from './components/UserProfile';
 import BusinessesContainer from './containers/BusinessesContainer';
 
+
 class  App extends Component {
   constructor(props) {
       super(props);
@@ -67,8 +68,12 @@ class  App extends Component {
        <React.StrictMode>
        <Router>
        <NavBar loggedInStatus={this.state.isLoggedIn}/>
-
+       <Home  handleLogout={this.handleLogout} loggedInStatus={this.state.isLoggedIn}/>
+       
        <Switch>
+          
+          
+
           <Route exact path = '/businesses' render = {props => (
             <BusinessesContainer {...props} loggedInStatus= {this.state.isLoggedIn}/>
           )}
@@ -77,11 +82,12 @@ class  App extends Component {
             <Neighbors { ...props} loggedInStatus = {this.state.isLoggedIn}/>
           )}
           />
+          
 
-          <Route exact path='/' render={props => (
+          {/* <Route exact path='/' render={props => (
               <Home {...props} handleLogout={this.handleLogout} loggedInStatus={this.state.isLoggedIn}/>
               )}
-            />
+            /> */}
           <Route exact path='/login' render={props => (
             <Login {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn}/>
             )}

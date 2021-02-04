@@ -22,12 +22,12 @@ class Home extends Component{
     render(){
         return(
             <div>
-                 <Route exact  path = '/'>
+                
                 <div className ='header'>
                 <h1>NABE B</h1>
                 {this.props.loggedInStatus && <button onClick = {this.handleLogoutClick}>Logout</button>}
                 </div>
-                </Route>
+                
                 
                 
             </div>

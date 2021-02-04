@@ -16,10 +16,12 @@ class Businesses extends Component {
 
      render(){
          return(
-             <div>
-                 <h1>Businesses</h1>
-                 {this.renderBusinesses()}
+           <div>
+             <div className="component-title">Businesses</div>
+             <div className="wrapper">
+                {this.renderBusinesses()}
              </div>
+           </div>
          )
      }
 }

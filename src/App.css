@@ -1,20 +1,25 @@
-.App {
+ .App {
   text-align: center;
-  display: grid;
+  
 }
 
-.App-logo {
+body {
+  margin: 0;
+  font-family: monospace;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+}  */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -23,26 +28,27 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 
 .header {
   background-color: #61dafb;
-  padding: 14px;
+  padding: 5px;
   text-align: left;
+  /* height:70px; */
 }
 
 h1 {
@@ -69,13 +75,14 @@ h2 {
 .navbar {
   overflow: hidden;
   background-color: #4d565815;
+  /* height: 50px; */
 }
 
 .navBarLinks {
   float: right;
   display: block;
   color: #b4b0b0;
-  text-align: center;
+  text-align: center; 
   padding: 10px;
   text-decoration: #4d5658;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -93,22 +100,72 @@ h2 {
   margin: 0 auto;
 }
 
-.scrolling-wrapper{
- display: inline-block;
- overflow: auto;
- white-space: nowrap;
-}
 
+/* .slide {
+  width: 100vw;
+  height: 100vh;
+} */
+.wrapper{
+  /* display: inline-grid; */
+
+  /* width: 400px;
+  height: 900px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  transform-origin: right top;
+  transform:rotate(-90deg) translateY(-100px); */
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
 
 
 .businessCard{
   background-color: transparent;
-  width: 18rem;
-  height: 18rem;
+  width: 20rem;
+  height: 20rem;
   border: grey solid 1px;
-  padding: 1rem;
+  padding: 1rem ;
   margin: 1rem 1rem;
   text-align: center;
   
+  /* transform: rotate(90deg);
+  transform-origin: right top; */
+  display: inline-block;
 }
+
+/* .outer-wrapper{
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left; 
+  width: 100vh;
+  height: 100vw;
+  
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+}  */
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+.component-title{
+  text-align: center;
+  font-size: 24px;
+  color: rgba(63, 62, 62, 0.658);
+  text-shadow: 2px 2px 7px ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+
+
+
+
+
 
