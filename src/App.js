@@ -65,13 +65,18 @@ class  App extends Component {
   render(){
     return (
       <div>
+        
        <React.StrictMode>
        <Router>
        <NavBar loggedInStatus={this.state.isLoggedIn}/>
-       <Home  handleLogout={this.handleLogout} loggedInStatus={this.state.isLoggedIn}/>
+       <div className ='header'>
+       <h1>NABE B</h1>
+       </div>
        
        <Switch>
-          
+          <Route exact path ="/">
+            <Home  handleLogout={this.handleLogout} loggedInStatus={this.state.isLoggedIn}/>
+          </Route> 
           
 
           <Route exact path = '/businesses' render = {props => (
