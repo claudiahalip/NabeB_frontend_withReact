@@ -1,13 +1,25 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {fetchNeighborhoods} from '../actions/neighborhoodsActions'
+import Neighbors from '../components/Neighbors'
 
-class Neighbors extends Component {
+class NeighborsContainer extends Component {
+
+    componentDidMount(){
+        this.props.fetchNeighborhoods();
+    }
+
     render (){
         return(
             <div>
-
-            </div>
+                <Neighbors neighborhoods = {this.props.neighborhoods}/>
+           </div>
         )
     }
 }
+const mapStateToProps=(state)=>{
+    console.log(state.neighborhoodReducer.neighborhoods)
+    return state.neighborhoodReducer
+}
 
-export default Neighbors
+export default connect(mapStateToProps, {fetchNeighborhoods}) (NeighborsContainer);

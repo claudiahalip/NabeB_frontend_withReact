@@ -5,11 +5,12 @@ import NavBar from './components/NavBar';
 import axios from 'axios';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { Component } from 'react';
-import Login from './components/Login'
+import Login from './components/Login';
 import Signup from  './components/Signup';
-import Neighbors from './components/Neighbors'
-import UserProfile from './components/UserProfile';
+import NeighborsContainer from './containers/NeighborsContainer';
 import BusinessesContainer from './containers/BusinessesContainer';
+import UserProfile from './components/UserProfile';
+
 
 
 class  App extends Component {
@@ -84,7 +85,7 @@ class  App extends Component {
           )}
           />
           <Route exact path = '/neighborhoods' render = {props => (
-            <Neighbors { ...props} loggedInStatus = {this.state.isLoggedIn}/>
+            <NeighborsContainer { ...props} loggedInStatus = {this.state.isLoggedIn}/>
           )}
           />
           

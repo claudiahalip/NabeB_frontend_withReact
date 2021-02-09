@@ -22,7 +22,7 @@ class BusinessesContainer extends Component{
 
 const mapStateToProps=(state)=>{
     
-    console.log(state.businessReducer)
+    //console.log(state.businessReducer)
     return state.businessReducer
 }
 export default connect(mapStateToProps, {fetchBusinesses} )(BusinessesContainer)
