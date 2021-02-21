@@ -10,6 +10,7 @@ import Signup from  './components/Signup';
 import NeighborsContainer from './containers/NeighborsContainer';
 import BusinessesContainer from './containers/BusinessesContainer';
 import UserProfile from './components/UserProfile';
+import Header from './components/Header'
 
 
 
@@ -69,6 +70,7 @@ class  App extends Component {
         
        <React.StrictMode>
        <Router>
+        <Header/>
        <NavBar loggedInStatus={this.state.isLoggedIn}/>
        <div className ='header'>
        <h1>NABE B</h1>
