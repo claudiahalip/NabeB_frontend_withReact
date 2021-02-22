@@ -11,6 +11,7 @@ import NeighborsContainer from './containers/NeighborsContainer';
 import BusinessesContainer from './containers/BusinessesContainer';
 import UserProfile from './components/UserProfile';
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 
@@ -108,6 +109,7 @@ class  App extends Component {
             )}
               />
         </Switch>
+        <Footer/>
         
         
        
