@@ -10,8 +10,9 @@ import Signup from  './components/Signup';
 import NeighborsContainer from './containers/NeighborsContainer';
 import BusinessesContainer from './containers/BusinessesContainer';
 import UserProfile from './components/UserProfile';
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import SearchPage from './components/SearchPage'
 
 
 
@@ -76,31 +77,21 @@ class  App extends Component {
        
        
        <Switch>
-          <Route exact path ="/">
-            <Home  handleLogout={this.handleLogout} loggedInStatus={this.state.isLoggedIn}/>
-          </Route> 
-          
-
-          <Route exact path = '/businesses' render = {props => (
-            <BusinessesContainer {...props} loggedInStatus= {this.state.isLoggedIn}/>
-          )}
-          />
-          <Route exact path = '/neighborhoods' render = {props => (
-            <NeighborsContainer { ...props} loggedInStatus = {this.state.isLoggedIn}/>
-          )}
-          />
-          
-
-          {/* <Route exact path='/' render={props => (
-              <Home {...props} handleLogout={this.handleLogout} loggedInStatus={this.state.isLoggedIn}/>
-              )}
-            /> */}
-          <Route exact path='/login' render={props => (
-            <Login {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn}/>
+            <Route exact path = '/businesses' render = {props => (
+              <BusinessesContainer {...props} loggedInStatus= {this.state.isLoggedIn}/>
             )}
-          />
+            />
+            <Route exact path = '/neighborhoods' render = {props => (
+              <NeighborsContainer { ...props} loggedInStatus = {this.state.isLoggedIn}/>
+            )}
+            />
+  
+            <Route exact path='/login' render={props => (
+              <Login {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn}/>
+              )}
+            />
 
-          <Route exact path='/signup' render={props => (
+            <Route exact path='/signup' render={props => (
               <Signup {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn}/>
               )}
             />
@@ -108,7 +99,13 @@ class  App extends Component {
               <UserProfile {...props} loggedInStatus = {this.state.isLoggedIn} test = "Claudia" username = {this.state.user.username}/>
             )}
               />
+            <Route exact path = "/search">
+              <SearchPage/>
+            </Route>
 
+            <Route exact path ="/">
+            <Home  handleLogout={this.handleLogout} loggedInStatus={this.state.isLoggedIn}/>
+          </Route> 
             
         </Switch>
         <Footer/>

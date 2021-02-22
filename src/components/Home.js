@@ -39,14 +39,14 @@ class Home extends Component{
                     price="$$$"
                     />
                     <Card
-                    src=" https://cdn.choosechicago.com/uploads/2020/05/AM_Bean-e1589998253183-1800x832.jpg"
+                    src=" https://media.timeout.com/images/105649106/image.jpg"
                     title = "Chicago"
                     description="Chicago........."
                     price="$$$"
                     />
                     
                     <Card
-                    src ="https://s3-prod.chicagobusiness.com/s3fs-public/editorial-chicago-WEB_i.jpg"
+                    src ="https://media.timeout.com/images/105649106/image.jpg"
                     title = "Chicago"
                     description="Chicago........."
                     price="$$$"
@@ -60,13 +60,13 @@ class Home extends Component{
                     price="$$$"
                     />
                     <Card
-                    src = "https://www.northcentralcollege.edu/sites/default/files/styles/full_image_large/public/chicago_full_image.jpg?h=c1eb06c9&itok=q7OL573H"
+                    src = "https://h7f7z2r7.stackpathcdn.com/sites/default/files/images/articles/chicago-1200.jpg"
                     title = "Chicago"
                     description="Chicago........."
                     price="$$$"
                     />
                     <Card
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO855n-EbQyjs-QvPmK-t2QaqW0UdRHi3U3g&usqp=CAU"
+                    src="https://h7f7z2r7.stackpathcdn.com/sites/default/files/images/articles/chicago-1200.jpg"
                     title = "Chicago"
                     description="Chicago........."
                     price="$$$"
