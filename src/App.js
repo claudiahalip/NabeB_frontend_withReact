@@ -108,6 +108,8 @@ class  App extends Component {
               <UserProfile {...props} loggedInStatus = {this.state.isLoggedIn} test = "Claudia" username = {this.state.user.username}/>
             )}
               />
+
+            
         </Switch>
         <Footer/>
         
