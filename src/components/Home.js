@@ -3,6 +3,7 @@ import { Component } from "react"
 import React from 'react'
 import image from '../images/raisl_project_image01.jpg'
 import axios from "axios"
+import Banner from '../components/Banner'
 
 
 
@@ -23,6 +24,7 @@ class Home extends Component{
     render(){
         return(
             <div>
+                <Banner/>
                 
                 <div >
                 {this.props.loggedInStatus && <button onClick = {this.handleLogoutClick}>Logout</button>}

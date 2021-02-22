@@ -7,10 +7,13 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 function Header() {
     return (
         <div className="header">
+            <div className="header-left">
             <img className="image-logo"
             src={image_logo}
             alt=""
             ></img>
+            <h1>Nabe B</h1>
+            </div>
             <div className="header-center">
                 <input type="text"></input>
                 <SearchIcon/>

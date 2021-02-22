@@ -1,0 +1,45 @@
+.banner{
+    height: 50vw;
+    position: relative;
+    background: url("https://www.hecommunitybank.com/content/wintrust/barringtonbank/hecommunitybank/en/small-business/banking/checking-and-savings/_jcr_content/root/responsivegrid/hero_card.img.jpg/1534181904380.jpg");
+    
+}
+
+.banner-info{
+    background-color: black;
+    color: white;
+    padding-top: 25vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    width: 300px;
+}
+
+.banner-search {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-searchButton{
+    background-color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    color: lightcoral !important;
+
+}
+.banner-info > button {
+    background-color: tomato;
+    color: white;
+    text-transform: inherit;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+.banner-info > button:hover{
+    background-color: ivory;
+    color: lightcoral;
+}
+.banner-info > h5{
+    margin-top: 10px;
+}
+

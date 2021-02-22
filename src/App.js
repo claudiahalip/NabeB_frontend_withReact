@@ -70,11 +70,9 @@ class  App extends Component {
         
        <React.StrictMode>
        <Router>
-        <Header/>
-       <NavBar loggedInStatus={this.state.isLoggedIn}/>
-       <div className ='header'>
-       <h1>NABE B</h1>
-       </div>
+         <Header/>
+       {/* <NavBar loggedInStatus={this.state.isLoggedIn}/> */}
+       
        
        <Switch>
           <Route exact path ="/">
