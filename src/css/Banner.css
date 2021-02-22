@@ -1,7 +1,12 @@
 .banner{
     height: 50vw;
     position: relative;
-    background: url("https://www.hecommunitybank.com/content/wintrust/barringtonbank/hecommunitybank/en/small-business/banking/checking-and-savings/_jcr_content/root/responsivegrid/hero_card.img.jpg/1534181904380.jpg");
+    /* background: url("https://www.hecommunitybank.com/content/wintrust/barringtonbank/hecommunitybank/en/small-business/banking/checking-and-savings/_jcr_content/root/responsivegrid/hero_card.img.jpg/1534181904380.jpg"); */
+    /* background: url("../images/raisl_project_image01.jpg"); */
+    background-repeat: no-repeat;
+    background-position:center ;
+
+
     
 }
 

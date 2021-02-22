@@ -24,17 +24,23 @@ class Home extends Component{
     render(){
         return(
             <div>
-                <Banner/>
-                
                 <div >
                 {this.props.loggedInStatus && <button onClick = {this.handleLogoutClick}>Logout</button>}
                 </div>
-
-                <div>
-                <img className="home-image"
-                
-                src = {image}></img>
+                {/* <Banner/>
+                <div className="home-selection">
+                    <Card/>
+                    <Card/>
+                    <Card/>
                 </div>
+                <div className="home-selection">
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                </div> */}
+                
+
+               
                 
                 
             </div>
