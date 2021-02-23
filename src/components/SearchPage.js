@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/SearchPage.css'
-import {Button} from '@material-ui/core'
-
+import '../css/SearchPage.css';
+import {Button} from '@material-ui/core';
+import SearchResult from '../components/SearchResult';
 
 function SearchPage() {
     return (
@@ -32,6 +32,25 @@ function SearchPage() {
                 >More filters
                 </Button>
            </div>
+           <SearchResult
+            img="https://h7f7z2r7.stackpathcdn.com/sites/default/files/images/articles/chicago-1200.jpg" 
+            location="Chicago"
+            title="choose this location"
+            description="blablbabalajdybksdkh b   fth sc " 
+            star={4.75}
+            price="$$/per hour"
+            total="approx$$$$"
+           />
+
+        <SearchResult
+            img="https://h7f7z2r7.stackpathcdn.com/sites/default/files/images/articles/chicago-1200.jpg" 
+            location="Chicago"
+            title="choose this location"
+            description="blablbabalajdybksdkh b   fth sc " 
+            star={4.75}
+            price="$$/per hour"
+            total="approx$$$$"
+           />
         </div>
     )
 }
