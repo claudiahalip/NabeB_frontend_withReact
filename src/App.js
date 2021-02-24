@@ -73,7 +73,7 @@ class  App extends Component {
        <React.StrictMode>
        <Router>
          <Header/>
-       {/* <NavBar loggedInStatus={this.state.isLoggedIn}/> */}
+         <NavBar loggedInStatus={this.state.isLoggedIn}/>
        
        
        <Switch>
@@ -96,7 +96,7 @@ class  App extends Component {
               )}
             />
             <Route exact path='/userprofile' render = {props=> (
-              <UserProfile {...props} loggedInStatus = {this.state.isLoggedIn} test = "Claudia" username = {this.state.user.username}/>
+              <UserProfile {...props} loggedInStatus = {this.state.isLoggedIn} test = "Claudia" username = {this.state.user.username} user_id={this.state.user.id}/>
             )}
               />
             <Route exact path = "/search">

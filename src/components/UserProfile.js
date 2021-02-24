@@ -1,49 +1,14 @@
 import React, {Component} from 'react'
+import NewProfilePhotoForm from '../components/NewProfilePhotoForm'
+
 
 class UserProfile extends Component {
-
-    state = {
-        image: {}
-    }
-    
-    handleOnChange = (event) => {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
-    }
-
-    handleSubmit = (e) => {
-       e.preventDefault()
-       const form = new FormData()
-        form.append("image", this.state.image)
-        form.append("video", this.state.video)
-        fetch(`http://localhost:3001/items`, {
-            method: "POST",
-            body: form
-        })
-    }
-
-    
     render(){
-        
-
         return(
             <div>
                 <h1>TEST</h1>
-                <div>{`Welcome,  ${this.props.username}!`}</div>
-                <form onSubmit= {this.handleSubmit} >
-                    <input
-                    onChange = {this.handleOnChange}
-                    name = 'image'
-                    type = 'file'
-                    accept="image/png, image/jpeg"
-                    >
-                    </input>
-                    <input type="submit"
-                    value = "Upload"
-                    ></input>
-                </form>
-            
+                <div className="welcome-message">{`Welcome,  ${this.props.username}!`}</div>
+                <NewProfilePhotoForm user_id = {this.props.user_id}/>
             </div>
         )
     }

@@ -4,20 +4,21 @@
     /* background: url("https://www.hecommunitybank.com/content/wintrust/barringtonbank/hecommunitybank/en/small-business/banking/checking-and-savings/_jcr_content/root/responsivegrid/hero_card.img.jpg/1534181904380.jpg"); */
     background: url("../images/raisl_project_image01.jpg");
     background-repeat: no-repeat;
-    background-position:center ;
+    background-position:right ;
 
 
     
 }
 
 .banner-info{
-    background-color: black;
+    background-color:grey;
     color: white;
     padding-top: 25vh;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 40px;
-    width: 300px;
+    width: 400px;
+    height: 385px;
 }
 
 .banner-search {
@@ -46,5 +47,6 @@
 }
 .banner-info > h5{
     margin-top: 10px;
+    font-size: 14px;
 }
 
