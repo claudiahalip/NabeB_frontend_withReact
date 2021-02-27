@@ -17,8 +17,9 @@ function Header() {
             alt=""
             ></img>
             </Link>
-
+            
             <h1>Nabe B</h1>
+            
             </div>
             
             <div className="header-center">

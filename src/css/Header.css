@@ -12,6 +12,28 @@
 .header-left{
     display: flex;
 }
+
+.header-left > h1 {
+    font-size: 24px;
+    padding-left: 30px;
+    
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .image-logo {
+      animation: image-logo-spin infinite 20s linear;
+    }
+  }
+
+@keyframes image-logo-spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
 .image-logo {
    object-fit: contain;
    height: 60px;
