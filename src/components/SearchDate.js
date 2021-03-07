@@ -34,7 +34,7 @@ function SearchDate() {
             <input min={0} defaultValue={2}
             type="number"/>
             <Button onClick = {()=> history.push('/search')}>
-                Search Airbnb
+                Search
             </Button>
            
         </div>
