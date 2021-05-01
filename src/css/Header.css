@@ -7,6 +7,7 @@
     background-color: white;
     z-index: 100;
     width: 100%;
+    align-self: flex-start
 }
 
 .header-left{

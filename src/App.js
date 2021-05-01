@@ -77,6 +77,9 @@ class  App extends Component {
        
        
        <Switch>
+            <Route exact path ="/">
+              <Home  handleLogout={this.handleLogout} loggedInStatus={this.state.isLoggedIn}/>
+            </Route> 
             <Route exact path = '/businesses' render = {props => (
               <BusinessesContainer {...props} loggedInStatus= {this.state.isLoggedIn}/>
             )}
@@ -103,9 +106,7 @@ class  App extends Component {
               <SearchPage/>
             </Route>
 
-            <Route exact path ="/">
-            <Home  handleLogout={this.handleLogout} loggedInStatus={this.state.isLoggedIn}/>
-          </Route> 
+            
             
         </Switch>
         <Footer/>

@@ -1,7 +1,6 @@
 
 import { Component } from "react"
-import React from 'react'
-import image from '../images/raisl_project_image01.jpg'
+import React from 'react';
 import axios from "axios"
 import Banner from '../components/Banner'
 import '../css/Home.css'
@@ -73,7 +72,6 @@ class Home extends Component{
                     />
                 </div>
                 
-
                
                 
                 
